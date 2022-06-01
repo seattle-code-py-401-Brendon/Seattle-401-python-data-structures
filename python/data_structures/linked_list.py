@@ -1,15 +1,30 @@
+# create node class
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
 class LinkedList:
+    def __init__(self, head=None):
+        self.head = head
     """
-    Put docstring here
+    Linked List class that uses methods of insert,...
     """
 
-    def __init__(self):
+    def insert(self, value):
         # initialization here
-        pass
+        node = Node(value)
+        node.next = self.head
+        self.head = node
 
-    def some_method(self):
+    def includes(self, value):
         # method body here
-        pass
+        current = self.head
+        while current != None:
+            if current.value == value:
+                return True
+            current = current.next
+        return False
 
 
 class TargetError:
