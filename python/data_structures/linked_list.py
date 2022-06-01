@@ -17,9 +17,14 @@ class LinkedList:
         node.next = self.head
         self.head = node
 
-    def some_method(self):
+    def includes(self, value):
         # method body here
-        pass
+        current = self.head
+        while current != None:
+            if current.value == value:
+                return True
+            current = current.next
+        return False
 
 
 class TargetError:
