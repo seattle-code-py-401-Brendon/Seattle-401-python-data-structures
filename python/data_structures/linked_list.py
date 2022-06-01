@@ -8,7 +8,7 @@ class LinkedList:
     def __init__(self, head=None):
         self.head = head
     """
-    Linked List class that uses methods of insert,...
+    Linked List class that uses methods of insert, includes and to string
     """
 
     def insert(self, value):
@@ -25,6 +25,8 @@ class LinkedList:
                 return True
             current = current.next
         return False
+
+    
 
 
 class TargetError:
