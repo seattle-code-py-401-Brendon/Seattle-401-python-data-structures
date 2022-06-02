@@ -26,6 +26,22 @@ class LinkedList:
             current = current.next
         return False
 
+    def __str__(self):
+        """
+        convverts the Linked List to a string and returns the contents as a string 
+        """
+        current = self.head
+        values = ""
+        if self.head is None:
+         return f"NULL"
+        while current != None:
+            values += "{}".format('{ ' + f"{current.value}" + ' } -> ')
+            current = current.next
+        values += "NULL"
+        return values
+        
+
+
     
 
 
