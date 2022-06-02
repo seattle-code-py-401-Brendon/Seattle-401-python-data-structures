@@ -28,9 +28,19 @@ class LinkedList:
 
     def __str__(self):
         """
-        prints LinkedList 
+        convverts the Linked List to a string and returns the contents as a string 
         """
-        return f"NULL"
+        current = self.head
+        values = ""
+        if self.head is None:
+         return f"NULL"
+        while current != None:
+            values += "{}".format('{ ' + f"{current.value}" + ' } -> ')
+            current = current.next
+        values += "NULL"
+        return values
+        
+
 
     
 
