@@ -26,6 +26,12 @@ class LinkedList:
             current = current.next
         return False
 
+    def __str__(self):
+        """
+        prints LinkedList 
+        """
+        return f"NULL"
+
     
 
 
