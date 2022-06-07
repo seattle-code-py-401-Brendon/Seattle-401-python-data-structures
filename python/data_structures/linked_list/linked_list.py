@@ -26,6 +26,16 @@ class LinkedList:
             current = current.next
         return False
 
+
+    def append(self, value):
+        pass
+
+    def insert_before(self, query, value):
+        pass
+
+    def insert_after(self, query, value):
+        pass
+
     def __str__(self):
         """
         convverts the Linked List to a string and returns the contents as a string 
