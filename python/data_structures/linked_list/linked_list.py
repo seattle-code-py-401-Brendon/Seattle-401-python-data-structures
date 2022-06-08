@@ -62,6 +62,12 @@ class LinkedList:
         pass
 
     def insert_after(self, query, value):
+        """insert new node after the specified query node
+
+        Args:
+            query (any): the node we are looking for to insert after
+            value (any): the node with a value that we will insert after the query node
+        """
         pass
 
     def __str__(self):
