@@ -1,6 +1,6 @@
 # Challenge Summary
 <!-- Description of the challenge -->
-### Feature Tasks
+### Feature Tasks Code Challenge Class 06
 **Write the following methods for the Linked List class:**
 
 - append
@@ -50,3 +50,34 @@ insert_after - Time = O(n), Space = O(1)
 - Can successfully insert a node before the first node of a linked list
 - Can successfully insert after a node in the middle of the linked list
 - Can successfully insert a node after the last node of the linked list   
+
+# Challenge Summary
+<!-- Description of the challenge -->
+### Feature Tasks Code Challenge Class 07
+**Write the following methods for the Linked List class:**
+
+- kth from end
+    - arguments: new value
+    - adds a new node with the given value to the end of the list
+
+
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+
+![whiteboard](./Linked-list-KTH.jpg)
+
+## Code
+[Linked List code](./linked_list.py)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+
+
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+
+
+## Unit Tests
