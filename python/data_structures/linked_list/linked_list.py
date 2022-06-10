@@ -80,6 +80,14 @@ class LinkedList:
         """
         pass
 
+    def kthFromEnd(k):
+        """get the vale of the node at the (k)location
+
+        Args:
+            k (int): the location of where the node is at
+        """
+        pass
+
     def print(self):
         current = self.head
         while current:
