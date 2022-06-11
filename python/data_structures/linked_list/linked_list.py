@@ -61,15 +61,20 @@ class LinkedList:
         """
         node = Node(value)
         current = self.head
-        
-        while current:
-            next_node = current.next
-            if current.next.value == query:
-                # 1,2,3,none
-                current.next = node
-                node.next = next_node
-                return
-            current = current.next
+        # print(current.value)
+        if current.value == query:
+            self.insert(value)
+            return
+        else:
+            while current:
+                next_node = current.next
+                if current.next.value == query:
+                    
+                    # 1,2,3,none
+                    current.next = node
+                    node.next = next_node
+                    return
+                current = current.next
 
     def insert_after(self, query, value):
         """insert new node after the specified query node
@@ -78,7 +83,13 @@ class LinkedList:
             query (any): the node we are looking for to insert after
             value (any): the node with a value that we will insert after the query node
         """
-        pass
+        if query is None:
+            raise TargetError()
+
+        node = Node(value)
+        node.next = query.next
+        query.next = node
+        
 
     def kthFromEnd(k):
         """get the vale of the node at the (k)location
@@ -113,14 +124,19 @@ class LinkedList:
     
 
 
-class TargetError:
-    pass
+class TargetError(Exception):
+    """error handling class.
+
+    Args:
+        Exception (_type_): _description_
+    """
+    def __init__(self, message="Error"):
+        self.message = message
 
 
 if __name__ == "__main__":
     ll = LinkedList()
     ll.insert(1)
-    ll.insert(2)
-    ll.insert(3)
+    # ll.insert(2)
+    ll.insert_before(1,5)
     ll.print()
-    print(ll.insert_before(2,5))
