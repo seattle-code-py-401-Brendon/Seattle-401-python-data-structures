@@ -62,7 +62,7 @@ class LinkedList:
         node = Node(value)
         current = self.head
         # print(current.value)
-        if current.value == query:
+        if current is None or current.value is query:
             self.insert(value)
             return
         else:
@@ -83,12 +83,19 @@ class LinkedList:
             query (any): the node we are looking for to insert after
             value (any): the node with a value that we will insert after the query node
         """
-        if query is None:
-            raise TargetError()
+        
+        current = self.head
 
-        node = Node(value)
-        node.next = query.next
-        query.next = node
+        if current.next is None:
+            self.insert(value)
+            return
+        while current:
+            if current.value == query:
+                node = Node(value)
+                current.next = node
+                return
+            current = current.next
+
         
 
     def kthFromEnd(k):
@@ -136,7 +143,14 @@ class TargetError(Exception):
 
 if __name__ == "__main__":
     ll = LinkedList()
-    ll.insert(1)
-    # ll.insert(2)
-    ll.insert_before(1,5)
+    
+    ll.insert("apple")
+    
+    ll.insert("banana")
+
+    ll.insert_after("banana", "cucumber")
+
     ll.print()
+
+    print(str(ll) == "{ banana } -> { cucumber } -> { apple } -> NULL")
+    
