@@ -1,7 +1,11 @@
 # Data Structures and Algorithms
 
 ## Navigation
-[Linked List Insertion](./python//data_structures/linked_list/README.md)
+
+
+[Linked List](./python//data_structures/linked_list/README.md)
+
+[Zip List](./python/code_challenges/linked-list-zip/README.md)
 -----------------
 -----------------
 -----------------
