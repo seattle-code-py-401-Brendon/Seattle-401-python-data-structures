@@ -6,6 +6,8 @@
 [Linked List](./python//data_structures/linked_list/README.md)
 
 [Zip List](./python/code_challenges/linked-list-zip/README.md)
+
+[pseudoQueue](./python/code_challenges/stack_queue_pseudo/README.md)
 -----------------
 -----------------
 -----------------
