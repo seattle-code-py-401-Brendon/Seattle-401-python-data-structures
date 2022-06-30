@@ -8,6 +8,9 @@
 [Zip List](./python/code_challenges/linked-list-zip/README.md)
 
 [pseudoQueue](./python/code_challenges/stack_queue_pseudo/README.md)
+
+[Animal Shelter](./python/code_challenges/stack_queue_animal_shelter/README.md)
+-----------------
 -----------------
 -----------------
 -----------------
