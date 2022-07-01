@@ -10,6 +10,8 @@
 [pseudoQueue](./python/code_challenges/stack_queue_pseudo/README.md)
 
 [Animal Shelter](./python/code_challenges/stack_queue_animal_shelter/README.md)
+
+[stack queue brackets](./python/code_challenges/stack-queue-brackets/README.md)
 -----------------
 -----------------
 -----------------
